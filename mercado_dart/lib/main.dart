@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
           return IconButton(
             icon: const Icon(Icons.menu),
             onPressed: () { Scaffold.of(context).openDrawer(); },
-            tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+            tooltip: 'Navegar',
           );
         },
       ),
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: <Widget>[
       IconButton(
       icon: const Icon(Icons.shopping_cart),
-      tooltip: 'Show Snackbar',
+      tooltip: 'Ver carrinho',
       onPressed: () {
         ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Carrinho de Compras')));
@@ -97,15 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       ),
       body: Center(
-        const TabBarView(
-            children: <Widget>[
-        Center(
-        child: Text("It's cloudy here"),
-      ),
-     ),
-    ),
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+
         child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
